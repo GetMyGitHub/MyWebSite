@@ -1,0 +1,31 @@
+.article_parcours
+{
+    border-radius: 20px;
+    background-color: antiquewhite;
+    padding-left: 20px;    
+}
+
+.article_parcours h1
+{
+    color:darkgreen; 
+    font-size: 2em;
+}
+
+.article_parcours h3
+{
+    color:darkgreen;
+    text-decoration-line: underline;
+    font-size: 1.6em;
+}
+
+.article_parcours h4
+{
+    color:darkgreen;
+    text-decoration-line: underline;
+    font-size: 1.3em;
+}
+
+.col-sm-4{
+    text-align: center;
+    text-transform:uppercase;
+}
