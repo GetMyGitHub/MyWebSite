@@ -1,29 +1,79 @@
-<!DOCTYPE html>
+<!-- DOCTYPE html !-->
 <html>
-<body>
-<h1>HTML Geolocation</h1>
-<p>Click the button to get your coordinates.</p>
+    <head>
+        <title>GetMyGitHub</title>
+        <meta charset="utf-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<button onclick="getLocation()">Try It</button>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<p id="demo"></p>
-
-<script>
-const x = document.getElementById("demo");
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
-</script>
-
-</body>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <header>
+        <nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="https://getmygithub.github.io/MyWebSite/">GetMyGitHub</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="https://getmygithub.github.io/MyWebSite/">Accueil</a></li>
+		      <li><a href="#">Mes sources</a>
+		      <li><a href="#">Mes applications</a></li>
+		      <li><a href="#">Mes sites</a></li>
+		    </ul>
+		  </div>
+		</nav> 
+    </header>
+    <body>
+        <div class = "article_parcours">
+            <h1>Parcours :</h1>
+            <h3>09/11/2017 : Entrée en formation développeur de logiciels.</h3>
+            <h4>
+            Objectifs:
+            </h4>
+            <div class="row">
+                <div class="col-sm-4"><h5>Développement d'une application client/serveur.</h5>
+                    <p>Nom : Maint'Info</p>
+                    <p>Technologies : JAVA, SQL, PLSQL, OracleJDBC</p>
+                    <p>Outils : Eclipse, Shell SQL, SQLDeveloppeur, NotePad++, Git</p>
+                </div>
+                <div class="col-sm-4"><h5>Développement d'un site web. </h5>
+                    <p>Nom : Maint'Info</p>
+                    <p>Technologies : HTML, CSS, JSP, Javascript, JQuery, Ajax, BootStrap</p>
+                    <p>Outils : Eclipse, Brackets, Git</p>
+                </div>
+                <div class="col-sm-4"><h5>Développement d'une application android.</h5>
+                    <p>Nom : Maint'Info</p>
+                    <p>Technologies : </p>
+                    <p>Outils : </p>
+                </div>
+            </div> 
+        </div> 
+        <style type="text/css">
+            .article_parcours {
+              background-color: antiquewhite;
+            }
+            .article_parcours h1 {
+                color:darkcyan;
+                font-size: 2em;
+            }
+            .article_parcours h3{
+                text-decoration-line: underline;
+                font-size: 1.5em;
+            }
+            .article_parcours h4{
+                font-size: 1.5em;
+            }
+            .article_parcours h5{
+                font-size: 1.5em;
+            }
+            .article_parcours .col-sm-4 {
+                text-align: center;
+            }
+            
+        </style>
+    </body>
 </html>
